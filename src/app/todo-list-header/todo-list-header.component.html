@@ -1,0 +1,16 @@
+<header class="xheader">
+  <h4>Todos</h4>
+  <div class="row">
+    <div class="col-md-10">
+        <div class="input-group mb-3 md-end">
+          <input class="form-control btn-mg " placeholder="What needs to be done?" autofocus="" [(ngModel)]="newTodo.text"
+          (keyup.enter)="addTodo()">
+        </div> 
+    </div>
+    <div class="col-md-2">
+      <button type="submit" class="btn btn-primary addbuton" (click)="addTodo()">Add</button>
+        
+    </div>
+   
+  </div>
+</header>

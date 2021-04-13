@@ -1,0 +1,11 @@
+<div class="view">
+  <div class="row">
+    <div class="col-md-9">
+      <input class="toggle" type="checkbox" (click)="toggleTodoComplete(todo)" [checked]="todo.completed">
+      <label (click)="toggleTodoComplete(todo)">{{todo.text}}</label>
+    </div>
+    <div class="col-md-3">
+      <button class="btn btn-danger btn-mg" (click)="removeTodo(todo)">Remove</button>
+    </div>
+  </div>
+</div>
